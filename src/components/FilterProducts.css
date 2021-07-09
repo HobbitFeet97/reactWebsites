@@ -1,0 +1,35 @@
+.filter-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    min-width: 75%;
+    justify-content: space-evenly;
+    padding: 15px;
+    position: sticky;
+    top: 80px;
+    background-color: #fff;
+}
+
+.filter-head{
+    color: darkgray;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+.product-name-search{
+    border-color: darkgray;
+    font-weight: lighter;
+    padding: 5px;
+    min-width: 33%;
+    font-size: 1rem;
+    border-radius: 2px;
+}
+
+.filter-type{
+    border-color: darkgray;
+    font-weight: lighter;
+    padding: 5px;
+    font-size: 1rem;
+}

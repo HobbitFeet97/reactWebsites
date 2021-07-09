@@ -1,0 +1,27 @@
+button {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.button-info {
+  color: white;
+  background-color: black;
+  border-color: white;
+}
+
+.button-info-clicked {
+  color: black;
+  background-color: white;
+  border-color: black;
+}
+
+.button-info:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  border-color: black;
+}
+
+.button-info-clicked:hover {
+  cursor: pointer;
+}

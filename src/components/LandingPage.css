@@ -1,0 +1,33 @@
+.landing-page-img-wrap {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.landing-page-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 5px 5px;
+}
+
+.landing-page-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+}
+
+.landing-page-layover-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: lighter;
+  text-shadow: 0 0 11px rgb(0 0 0 / 80%);
+  font-size: 45px;
+}

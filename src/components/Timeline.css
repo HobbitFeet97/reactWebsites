@@ -1,0 +1,118 @@
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  min-height: 70vh;
+  max-width: 80%;
+}
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    min-width: 100%;
+}
+
+.timeline-title{
+  font-weight: lighter;
+  text-shadow: 0 0 11px rgb(0 0 0 / 20%);
+  font-size: 45px;
+  padding-bottom: 20px;
+}
+
+.timeline-container::after {
+  background-color: black;
+  content: "";
+  position: absolute;
+  width: 4px;
+  left: calc(50% - 2px);
+  height: 100%;
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+  margin: 10px 0;
+  width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+  align-self: flex-end;
+  justify-content: flex-start;
+  padding-left: 30px;
+  padding-right: 0px;
+}
+
+.timeline-item-content {
+  max-width: 70%;
+  background-color: black;
+  color: #fff;
+  font-weight: lighter;
+  text-shadow: 0 0 11px rgb(0 0 0 / 80%);
+  border-radius: 5px;
+  align-items: flex-end;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  text-align: right;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.timeline-item-content::after {
+  content: "";
+  background-color: black;
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+  position: absolute;
+  right: -7.5px;
+  top: calc(50% - 7.5px);
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content::after {
+  right: auto;
+  left: -7.5px;
+}
+
+.timeline-head{
+    font-weight: normal;
+    font-size: 1.5rem;
+    top: 0;
+}
+
+.timeline-link{
+    color: white;
+}
+
+.timeline-link:hover{
+    cursor: pointer;
+    text-shadow: 0 0 11px rgb(0 0 0 / 80%);
+}
+
+.circle{
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    position: absolute;
+    top: calc(50% - 15px);
+    right: -45px;
+    z-index: 100;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content .circle{
+    right: auto;
+    left: -45px;
+}
